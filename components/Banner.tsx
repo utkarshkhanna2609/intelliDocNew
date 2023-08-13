@@ -12,13 +12,14 @@ const Banner = () => {
     console.log("User input submitted:", userInput);
 
     try {
-      const res = await fetch("http://3.93.241.36:6400/query", {
+      const res = await fetch("/api/query", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ query: userInput }),
       });
+      
 
       console.log("Response status:", res.status);
 
