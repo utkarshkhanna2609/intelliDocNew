@@ -20,7 +20,7 @@ const firebaseAuth = getAuth(firebaseAdminApp);
 // check local storage options 
 // connect with custom mongodb provider 
 
-const options = {
+export const options = {
   session: {
     // Choose how you want to save the user session.
     // The default is `"jwt"`, an encrypted JWT (JWE) stored in the session cookie.
