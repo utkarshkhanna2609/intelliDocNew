@@ -20,10 +20,11 @@ const UserInputForm = ({ handleUserInput }) => {
       <Input
         value={userInput}
         onChange={handleInputChange}
-        placeholder="Type here..."
+        placeholder="Enter your medical query here..."
         size="md"
       />
-      <Button mt={4} onClick={handleSubmit}>
+      <Button backgroundColor="gray.300" color="black"
+        mt={5} onClick={handleSubmit}>
         Submit
       </Button>
     </>

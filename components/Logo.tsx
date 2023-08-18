@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <Box>
       <Image
-        src="https://picsum.photos/id/20/150/75"
+        src="/intellidocLogo.jpeg"
         alt="Logo"
         boxSize="80px"
         rounded={10000}

@@ -10,6 +10,7 @@ import {
   useDisclosure,
   Image,
   Spinner,
+  Text
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Logo from "./Logo";
@@ -54,7 +55,22 @@ const Header = memo(() => {
       <Box borderBottom="1px" borderBottomColor="gray.200">
         <Flex justifyContent="space-between" alignItems="center" py={4} px={[4, 6, 10]}>
           <Logo />
-
+          <Stack spacing={2}>
+          <Text
+            color="black"
+            fontStyle="bold"
+            fontSize={{ base: "lg", md: "xl", lg: "2xl", xl: "3xl" }}
+            mt={2}
+            textShadow="2px 2px 4px rgba(0, 0, 0, 0.2)" 
+            >IntelliDoc</Text>
+            <Text
+            color="black"
+            fontStyle="bold"
+            fontSize={{ base: "sm", md: "xl", lg: "xl", xl: "xl" }}
+            mt={2}
+            textShadow="2px 2px 4px rgba(0, 0, 0, 0.2)" 
+            >The Intelligent DocBot!</Text>
+          </Stack>
           <Box display={{ base: "block", md: "none" }}>
             <IconButton
               variant="ghost"

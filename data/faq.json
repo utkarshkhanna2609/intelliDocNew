@@ -3,26 +3,26 @@
       {
         "id": 1,
         "imageUrl": "https://via.placeholder.com/150",
-        "question": "What is Lorem Ipsum?",
-        "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "question": "Is IntelliDoc Safe for use?",
+        "answer": "IntelliDoc is safe to use, but the medical advise given by this bot shall not be considered a replacement for any medical advice given by qualified doctors."
       },
       {
         "id": 2,
         "imageUrl": "https://via.placeholder.com/150",
         "question": "Why do we use it?",
-        "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        "answer": "It is for provisional diagnosis, or to help people know what may be the issue with their bodies, this is not a replacement for any medical advice by a qualified doctor."
       },
       {
         "id": 3,
         "imageUrl": "https://via.placeholder.com/150",
-        "question": "Where does it come from?",
-        "answer": "Contrary to popular belief, Lorem Ipsum is not simply random text."
+        "question": "Does IntelliDoc provide any other services?",
+        "answer": "Not currently, but we may offer api usage soon."
       },
       {
         "id": 4,
         "imageUrl": "https://via.placeholder.com/150",
-        "question": "What is Lorem Ipsum?",
-        "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        "question": "Does it remember the conversations?",
+        "answer": "IntelliDoc has the functionality to remember one chat per use, that gets cleared after refershing the page, get premium subscription to acces all conversations."
       }
     ]
   }
