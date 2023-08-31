@@ -16,7 +16,7 @@ import {
 import { useSession, signIn } from 'next-auth/react';
 import UserInputForm from "./UserInputForm";
 import Typed from "typed.js";
-import ServiceComponent from "/Users/utkarshkhanna/Downloads/tantransha-boilerplate-feature/components/ServiceComponent.jsx";
+import ServiceComponent from "./ServiceComponent.jsx";
 
 const Banner = () => {
   const { data: session, status } = useSession();
