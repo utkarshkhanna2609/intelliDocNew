@@ -23,7 +23,7 @@ const UserInputForm = ({ handleUserInput }) => {
         placeholder="Enter your medical query here..."
         size="md"
       />
-      <Button backgroundColor="gray.300" color="black"
+      <Button backgroundColor="rgb(45, 210, 200)" color="black"
         mt={5} onClick={handleSubmit}>
         Submit
       </Button>

@@ -29,7 +29,7 @@ a {
                   color: #000;
                   font-size: 1.8rem;
 }
-.btn-signin {
+.btn {
    box-sizing: border-box;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -64,5 +64,6 @@ a {
 
 .btn-signin:hover {
   background-position: 0;
-  color: #000;  
+  color: rgb(45, 210, 200);  
 }
+

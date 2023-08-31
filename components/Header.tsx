@@ -20,12 +20,17 @@ import Permissions from "../data/ui-permissions.json";
 import * as fb  from "../lib/firebase-manager"
 
 
+
 const Header = memo(() => {
   const { data: session, status } = useSession();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
   const [prevSession, setPrevSession] = useState(session);
   console.log(" in header component session is  ", session , status);
+  const buttonStyles = {
+    backgroundColor: 'rgb(45, 210, 200)',
+    color: 'white',
+  };
 
   const handleSignInClick = () => {
     router.push("/signin");
@@ -54,23 +59,29 @@ const Header = memo(() => {
     <Box position="sticky" top="0" backgroundColor="white" zIndex="3">
       <Box borderBottom="1px" borderBottomColor="gray.200">
         <Flex justifyContent="space-between" alignItems="center" py={4} px={[4, 6, 10]}>
-          <Logo />
-          <Stack spacing={2}>
-          <Text
-            color="black"
-            fontStyle="bold"
-            fontSize={{ base: "lg", md: "xl", lg: "2xl", xl: "3xl" }}
-            mt={2}
-            textShadow="2px 2px 4px rgba(0, 0, 0, 0.2)" 
-            >IntelliDoc</Text>
-            <Text
-            color="black"
-            fontStyle="bold"
-            fontSize={{ base: "sm", md: "xl", lg: "xl", xl: "xl" }}
-            mt={2}
-            textShadow="2px 2px 4px rgba(0, 0, 0, 0.2)" 
-            >The Intelligent DocBot!</Text>
-          </Stack>
+          
+        <Flex alignItems="center"> {/* Flex container */}
+            <Logo /> {/* Assuming this is your Logo component */}
+            <Stack spacing={2} ml={2}> {/* Space between Logo and "IntelliDoc" */}
+              <Text
+                color="black"
+                fontWeight="extrabold"
+                fontSize={{ base: "lg", md: "3xl", lg: "2xl", xl: "3xl" }}
+                mt={2}
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.2)" 
+              >
+                IntelliDoc
+              </Text>
+              <Text
+                color="black"
+                fontStyle="bold"
+                fontSize={{ base: "sm", md: "2xl", lg: "xl", xl: "xl" }}
+                textShadow="2px 2px 4px rgba(0, 0, 0, 0.2)" 
+              >
+                Your Intelligent DocBot.
+              </Text>
+            </Stack>
+          </Flex>
           <Box display={{ base: "block", md: "none" }}>
             <IconButton
               variant="ghost"
@@ -89,7 +100,7 @@ const Header = memo(() => {
               <Spinner size="sm" />
             ) : (status==="unauthenticated" || (!session)) ? (
               console.log("Session is null or undefined",session, status),
-              <Button colorScheme="blue" size="sm" onClick={handleSignInClick}>
+              <Button colorScheme="blue" size="sm" onClick={handleSignInClick} style={buttonStyles}>
                 Sign In
               </Button>
             ) : (
