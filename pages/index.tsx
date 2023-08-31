@@ -12,7 +12,7 @@ import Banner from "../components/Banner";
 import Accordion from "../components/Accordion";
 //import ContactUs from "../components/ContactUs"
 import Footer from "../components/Footer";
-import ServiceComponent from "/Users/utkarshkhanna/Downloads/tantransha-boilerplate-feature/components/ServiceComponent.jsx";
+
 
 const Index = () => {
   console.log("in index component");
